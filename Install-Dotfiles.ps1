@@ -22,3 +22,6 @@ Set-Location -Path .\code-settings
 .\Copy-Settings-To-Destination.ps1
 & 'C:\Program Files\Git\bin\bash.exe' -c "./install.sh"
 Set-Location -Path ..
+
+# .vimrc
+Copy-Item -Path .\.vimrc\.vimrc -Destination $HOME -Recurse -Force
