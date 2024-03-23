@@ -1,0 +1,3 @@
+[submodule ".glaze-wm"]
+	path = .glaze-wm
+	url = https://github.com/chubbyhippo/.glaze-wm.git
