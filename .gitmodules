@@ -13,3 +13,6 @@
 [submodule "code-settings"]
 	path = code-settings
 	url = https://github.com/chubbyhippo/code-settings.git
+[submodule ".vimrc"]
+	path = .vimrc
+	url = https://github.com/chubbyhippo/.vimrc.git
