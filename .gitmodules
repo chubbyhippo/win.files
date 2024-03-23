@@ -4,3 +4,6 @@
 [submodule ".ideavimrc"]
 	path = .ideavimrc
 	url = https://github.com/chubbyhippo/.ideavimrc.git
+[submodule "Intellij-settings"]
+	path = Intellij-settings
+	url = https://github.com/chubbyhippo/Intellij-settings.git
