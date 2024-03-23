@@ -7,3 +7,6 @@
 [submodule "Intellij-settings"]
 	path = Intellij-settings
 	url = https://github.com/chubbyhippo/Intellij-settings.git
+[submodule "powershell-profile"]
+	path = powershell-profile
+	url = https://github.com/chubbyhippo/powershell-profile.git
