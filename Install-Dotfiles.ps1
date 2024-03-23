@@ -1,3 +1,9 @@
+# powershell profile
+if (-not (Test-Path -Path $PROFILE)) {
+    New-Item -ItemType File -Path $PROFILE -Force
+}
+Get-Content -Path .\powershell-profile\Profile.ps1 | Set-Content -Path $PROFILE
+
 # glazeWM
 Copy-Item -Path .\.glaze-wm -Destination $HOME -Recurse -Force
 
