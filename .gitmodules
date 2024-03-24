@@ -16,3 +16,6 @@
 [submodule ".vimrc"]
 	path = .vimrc
 	url = https://github.com/chubbyhippo/.vimrc.git
+[submodule "ahk"]
+	path = ahk
+	url = https://github.com/chubbyhippo/ahk.git
