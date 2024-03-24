@@ -6,6 +6,9 @@ Get-Content -Path .\powershell-profile\Profile.ps1 | Set-Content -Path $PROFILE
 # refresh
 $Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
+# ahk
+Copy-Item -Path .\ahk\CapsToChangeInputLanguage.ahk -Destination "$Home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\CapsToChangeInputLanguage.ahk" -Recurse -Force
+
 # glazeWM
 Copy-Item -Path .\.glaze-wm -Destination $HOME -Recurse -Force
 
