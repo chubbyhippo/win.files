@@ -19,3 +19,6 @@
 [submodule "ahk"]
 	path = ahk
 	url = https://github.com/chubbyhippo/ahk.git
+[submodule "path-settings"]
+	path = path-settings
+	url = https://github.com/chubbyhippo/path-settings.git
