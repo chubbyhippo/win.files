@@ -28,3 +28,6 @@ Set-Location -Path ..
 
 # .vimrc
 Copy-Item -Path .\.vimrc\.vimrc -Destination $HOME -Recurse -Force
+
+# .bashrc
+Copy-Item -Path .\.bashrc\.bashrc -Destination $HOME -Recurse -Force
