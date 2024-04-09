@@ -31,3 +31,8 @@ Copy-Item -Path .\.vimrc\.vimrc -Destination $HOME -Recurse -Force
 
 # .bashrc
 Copy-Item -Path .\.bashrc\.bashrc -Destination $HOME -Recurse -Force
+
+# path settings
+Set-Location -Path .\path-settings
+.\Install-Path.ps1
+Set-Location -Path ..
