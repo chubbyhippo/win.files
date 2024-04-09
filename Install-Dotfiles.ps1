@@ -3,6 +3,12 @@ if (-not (Test-Path -Path $PROFILE)) {
     New-Item -ItemType File -Path $PROFILE -Force
 }
 Get-Content -Path .\powershell-profile\Profile.ps1 | Set-Content -Path $PROFILE
+
+# path settings
+Set-Location -Path .\path-settings
+.\Install-Path.ps1
+Set-Location -Path ..
+
 # refresh
 $Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
@@ -31,8 +37,3 @@ Copy-Item -Path .\.vimrc\.vimrc -Destination $HOME -Recurse -Force
 
 # .bashrc
 Copy-Item -Path .\.bashrc\.bashrc -Destination $HOME -Recurse -Force
-
-# path settings
-Set-Location -Path .\path-settings
-.\Install-Path.ps1
-Set-Location -Path ..
