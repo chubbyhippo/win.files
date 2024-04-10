@@ -25,3 +25,6 @@
 [submodule ".bashrc"]
 	path = .bashrc
 	url = https://github.com/chubbyhippo/.bashrc.git
+[submodule "init.lua"]
+	path = init.lua
+	url = https://github.com/chubbyhippo/init.lua.git
