@@ -37,3 +37,9 @@ Copy-Item -Path .\.vimrc\.vimrc -Destination $HOME -Recurse -Force
 
 # .bashrc
 Copy-Item -Path .\.bashrc\.bashrc -Destination $HOME -Recurse -Force
+
+# init.lua
+if (-not (Test-Path -Path "$HOME\AppData\Local\nvim\")) {
+    New-Item -ItemType Directory -Path "$HOME\AppData\Local\nvim\" -Force
+}
+Get-Content -Path .\init.lua\init.lua | Set-Content -Path "$HOME\AppData\Local\nvim\init.lua"
