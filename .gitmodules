@@ -28,3 +28,6 @@
 [submodule "init.lua"]
 	path = init.lua
 	url = https://github.com/chubbyhippo/init.lua.git
+[submodule "windows-terminal-settings"]
+	path = windows-terminal-settings
+	url = https://github.com/chubbyhippo/windows-terminal-settings.git
