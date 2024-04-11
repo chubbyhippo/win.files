@@ -9,6 +9,9 @@ Set-Location -Path .\path-settings
 .\Install-Path.ps1
 Set-Location -Path ..
 
+# windows terminal settings
+Copy-Item -Path .\windows-terminal-settings\settings.json -Destination "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Recurse -Force
+
 # refresh
 $Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
