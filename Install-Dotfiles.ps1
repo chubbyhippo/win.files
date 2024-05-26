@@ -39,7 +39,7 @@ Set-Location -Path ..
 Copy-Item -Path .\.vimrc\.vimrc -Destination $HOME -Recurse -Force
 
 # .bashrc
-Copy-Item -Path .\.bashrc\.bashrc -Destination $HOME -Recurse -Force
+Copy-Item -Path .\.bashrc\.bashrc-for-win -Destination "$HOME\.bashrc" -Recurse -Force
 
 # init.lua
 if (-not (Test-Path -Path "$HOME\AppData\Local\nvim\")) {
